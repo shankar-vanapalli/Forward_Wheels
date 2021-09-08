@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<meta name="viewport" content="width-device-width, initial-scale=1.0">
+<head>
+<title>Posting a Vehicle</title>
+
+<style type="text/css">
+	
+*{
+	box-sizing:border-box;
+}
+body{
+	font-family:'Nunito',sans-serif;
+	color:black;
+	background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),url(Pics/bg.jpg);
+	height:100vh;
+}
+form{
+	max-width:400px;
+	margin:10px auto;
+	padding:10px 0px;
+	background:grey;
+	border-radius:10px;
+	
+}
+h1{
+margin:0 0 30px 0;
+text-align:center;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+input[type="password"],
+textarea,
+select{
+	background:rgba(255,255,255,0.1);
+	border:none;
+	font-size:18px;
+	height:auto;
+	margin:0;
+	outline:0;
+	padding:10px;
+	width:100%;
+	background-color:#e8eeef;
+	color:;
+	box-shadow:0 1px 0 rgb(0,0,0,0.3) inset;
+	margin-bottom: 20px;
+		
+}
+input:focus, textarea:focus{
+	box-shadow: 0 0 5px rgba(81,203,238,1);
+	border:1px solid rgba(81,203,238,1);
+}
+select{
+	padding:6px;
+	height:32px;
+	border-radius:2px;
+}
+fieldset{
+	margin-bottom:30px;
+	border:none;
+}
+legend{
+	display:block;
+	margin-bottom:8px;
+}
+.section{
+	background-color:cyan;
+	color:black;
+	height:30px;
+	width:30px;
+	display:inline-block;
+	font-size:0.8em;
+	margin-right:4px;
+	line-height:30px;
+	text-align:center;
+	text-shadow:0 1px 0 rgba(255,255,255,0.2);
+	border-radius:100%;
+	cursor:pointer;
+}
+label{
+	display:block;
+	margin-bottom:8px;
+
+}
+button{
+	padding:10px 10px 10px 10px;
+	margin:0px 80px;
+	color:black;
+	background-color:cyan;
+	font-size:18px;
+	text-align:center;
+	font-style:normal;
+	border-radius:5px;
+	width:60%;
+	align:center;
+	border:1px solid transparent;
+	border-width:1px 1px 3px;
+	box-shadow:0 1px 0 rgba(255,255,255,0.1) inset;
+	margin-bottom:10px;
+	cursor:pointer;
+
+}
+a{
+	text-decoration:none;
+	font-size:20px;
+	
+	color:black;
+	cursor:pointer;
+	margin:0px 220px;
+}
+
+@media screen and(min-width:480px){
+	form{
+	max-width:480px;
+
+}
+}
+button:hover{
+	color:white;
+	background:black;
+}
+
+
+</style>
+</head>
+<body>
+<form action="post_2.jsp">
+
+<h1>Post a Vehicle</h1>
+<fieldset>
+<label class="" for="num">Mobile</label>
+<input type="text" name="num" required >
+
+<label class="" for="city">City</label> 
+<input type="text" name="city" required>
+<label class="" for="str">Area</label>
+<input type="text" name="str" required></textarea>
+<label class="" for="time">Duration</label> 
+<input type="text" name="time" placeholder="In Hours" required>
+<label class="" for="cost">Cost</label>
+<input type="text" name="cost" required>
+</fieldset>
+
+<button type="submit">Post</button>
+
+</form>
+</body>
+</html>
